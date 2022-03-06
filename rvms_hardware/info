@@ -1,0 +1,134 @@
+{
+  "uuid": "6b49bc140075a9f35ed71eeaba430e03",
+  "path": "Offline/rvms_hardware",
+  "name": "rvms_hardware",
+  "content": "",
+  "created_at": "2022-03-05 17:35:06",
+  "updated_at": "2022-03-06 00:44:57",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "bccb2bcc92b860369ab095ba3f6a3077",
+      "title": "rvms_schematic",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "025d1bdb9fda4a3f91a6037c44d4c337": 1,
+        "9dd02d48cb4f4680be27c4e91d9c05c7": 1,
+        "349bc3eba1a74113b4b3a382056ed2d8": 2,
+        "a1a68e8402b9461199345d2cae776c3f": 4
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ADAFRUIT_FEATHER_NRF52",
+          1,
+          "ADAFRUIT_FEATHER_NRF52",
+          "ADAFRUIT_FEATHER",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "afbf6c50ffbf44a394edcec75f58e292",
+            "uuid": "025d1bdb9fda4a3f91a6037c44d4c337"
+          }
+        ],
+        [
+          "MIKROBUS CLICK",
+          1,
+          "MIKROBUS_CLICK",
+          "ECG_SP-O2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "829500e84a1d4e6b9725b8da656dd56e",
+            "uuid": "9dd02d48cb4f4680be27c4e91d9c05c7"
+          }
+        ],
+        [
+          "4k7",
+          2,
+          "R_AXIAL-0.3",
+          "R1,R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "3eb1249f3ebb4284ae221b0379016582",
+            "uuid": "a1a68e8402b9461199345d2cae776c3f"
+          }
+        ],
+        [
+          "1k",
+          2,
+          "R_AXIAL-0.3",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "3eb1249f3ebb4284ae221b0379016582",
+            "uuid": "a1a68e8402b9461199345d2cae776c3f"
+          }
+        ],
+        [
+          "Adafruit MCP9808 QT",
+          2,
+          "ADAFRUIT MCP9808 QT",
+          "TEMP_AIR,TEMP_SURFACE",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "Adafruit",
+            "BOM_Manufacturer Part": "",
+            "puuid": "191dda3cf8b54de297241dbd768c4a59",
+            "uuid": "349bc3eba1a74113b4b3a382056ed2d8"
+          }
+        ]
+      ],
+      "updateTime": 1646549820,
+      "createTime": 1646527904,
+      "histories": [],
+      "created_at": "2022-03-05 17:51:44",
+      "updated_at": "2022-03-05 23:57:00"
+    },
+    {
+      "uuid": "36c72dd2764bd6ac131f57aba31c793c",
+      "puuid": "6b49bc140075a9f35ed71eeaba430e03",
+      "title": "rvms_pcb",
+      "filename": "rvms_pcb.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "afbf6c50ffbf44a394edcec75f58e292": 1,
+        "829500e84a1d4e6b9725b8da656dd56e": 1,
+        "3eb1249f3ebb4284ae221b0379016582": 4,
+        "191dda3cf8b54de297241dbd768c4a59": 2
+      },
+      "BOM": [],
+      "updateTime": 1646552090,
+      "createTime": 1646550103,
+      "histories": [],
+      "created_at": "2022-03-06 00:01:43",
+      "updated_at": "2022-03-06 00:34:50"
+    }
+  ],
+  "sort": [
+    "d1d1edfc90972cd7f97164b53586f8b5"
+  ],
+  "title": "rvms_hardware",
+  "foldername": "rvms_hardware",
+  "schfilename": "rvms_hardware.json",
+  "schfilemtime": 1646552442495
+}
