@@ -1,15 +1,15 @@
 {
   "uuid": "6b49bc140075a9f35ed71eeaba430e03",
-  "path": "Offline/rvms_hardware",
-  "name": "rvms_hardware",
+  "path": "Offline/echo",
+  "name": "echo",
   "content": "",
   "created_at": "2022-03-05 17:35:06",
-  "updated_at": "2022-03-06 00:44:57",
+  "updated_at": "2022-03-07 14:19:48",
   "stick": "",
   "documents": [
     {
       "uuid": "bccb2bcc92b860369ab095ba3f6a3077",
-      "title": "rvms_schematic",
+      "title": "echo_schematic",
       "description": "",
       "docType": "1",
       "master": "",
@@ -104,8 +104,8 @@
     {
       "uuid": "36c72dd2764bd6ac131f57aba31c793c",
       "puuid": "6b49bc140075a9f35ed71eeaba430e03",
-      "title": "rvms_pcb",
-      "filename": "rvms_pcb.json",
+      "title": "echo_pcb",
+      "filename": "echo_pcb.json",
       "description": "",
       "docType": "3",
       "master": "",
@@ -117,18 +117,18 @@
         "191dda3cf8b54de297241dbd768c4a59": 2
       },
       "BOM": [],
-      "updateTime": 1646552090,
+      "updateTime": 1646687988,
       "createTime": 1646550103,
       "histories": [],
       "created_at": "2022-03-06 00:01:43",
-      "updated_at": "2022-03-06 00:34:50"
+      "updated_at": "2022-03-07 14:19:48"
     }
   ],
   "sort": [
     "d1d1edfc90972cd7f97164b53586f8b5"
   ],
-  "title": "rvms_hardware",
-  "foldername": "rvms_hardware",
-  "schfilename": "rvms_hardware.json",
-  "schfilemtime": 1646552442495
+  "title": "echo",
+  "foldername": "echo",
+  "schfilename": "echo.json",
+  "schfilemtime": 1646687860652
 }
