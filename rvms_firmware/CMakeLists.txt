@@ -30,4 +30,4 @@ add_custom_target(
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_executable(Z_DUMMY_TARGET ${SRC_LIST} src/com/BluetoothLE.cpp src/com/BluetoothLE.hpp src/sensors/Sensors.cpp src/sensors/Sensors.hpp src/sensors/drivers/Mcp9808.cpp src/sensors/drivers/Mcp9808.hpp src/sensors/drivers/Max86150.cpp src/sensors/drivers/Max86150.hpp include/Config.hpp include/Debug.hpp)
+add_executable(Z_DUMMY_TARGET ${SRC_LIST} src/com/BluetoothLE.cpp src/com/BluetoothLE.hpp src/sensors/Sensors.cpp src/sensors/Sensors.hpp src/sensors/drivers/Mcp9808.cpp src/sensors/drivers/Mcp9808.hpp src/sensors/drivers/Max86150.cpp src/sensors/drivers/Max86150.hpp include/Config.hpp include/Debug.hpp src/sensors/Temperature.cpp src/sensors/Temperature.hpp src/sensors/OxygenSaturation.cpp src/sensors/OxygenSaturation.hpp src/sensors/Electrocardiogram.cpp src/sensors/Electrocardiogram.hpp)

@@ -67,6 +67,7 @@ void BluetoothLE::startAdvertising() {
 }
 
 void BluetoothLE::sendMsg(const char str[]) {
+    // TODO: fix this so it sends in batches of 20 bytes
     ble_uart_service.write(str);
 }
 

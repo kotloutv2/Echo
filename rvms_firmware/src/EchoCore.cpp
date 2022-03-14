@@ -25,13 +25,15 @@ TaskHandle_t bTask;
     Btle.setup();
     Btle.startAdvertising();
     Btle.setBatteryPercent(50);
-    int counter = 0;
-    char charBuf[18];
+//    uint32_t counter = 0;
+    char charBuf[21];
     while (true) {
         if (Btle.isConnected()){
-            sprintf(charBuf, "Msg#: %d\n", counter++);
+            sprintf(charBuf, "ABCDEFGHIJKLMNOPQRST");
+            Serial.print(charBuf);
             Btle.sendMsg(charBuf);
         } else {
+            vTaskDelay(1000);
             Serial.println("Disconnected");
         }
     }
