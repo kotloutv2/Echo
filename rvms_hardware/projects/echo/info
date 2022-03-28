@@ -4,7 +4,7 @@
   "name": "echo",
   "content": "",
   "created_at": "2022-03-05 17:35:06",
-  "updated_at": "2022-03-07 14:19:48",
+  "updated_at": "2022-03-27 22:57:08",
   "stick": "",
   "documents": [
     {
@@ -18,7 +18,7 @@
         "025d1bdb9fda4a3f91a6037c44d4c337": 1,
         "9dd02d48cb4f4680be27c4e91d9c05c7": 1,
         "349bc3eba1a74113b4b3a382056ed2d8": 2,
-        "a1a68e8402b9461199345d2cae776c3f": 4
+        "a1a68e8402b9461199345d2cae776c3f": 2
       },
       "BOM": [
         [
@@ -69,19 +69,6 @@
           }
         ],
         [
-          "1k",
-          2,
-          "R_AXIAL-0.3",
-          "R3,R4",
-          {
-            "BOM_Supplier Part": "",
-            "BOM_Supplier": "",
-            "BOM_Manufacturer Part": "",
-            "puuid": "3eb1249f3ebb4284ae221b0379016582",
-            "uuid": "a1a68e8402b9461199345d2cae776c3f"
-          }
-        ],
-        [
           "Adafruit MCP9808 QT",
           2,
           "ADAFRUIT MCP9808 QT",
@@ -95,14 +82,14 @@
           }
         ]
       ],
-      "updateTime": 1646549820,
+      "updateTime": 1648440966,
       "createTime": 1646527904,
       "histories": [],
       "created_at": "2022-03-05 17:51:44",
-      "updated_at": "2022-03-05 23:57:00"
+      "updated_at": "2022-03-27 22:16:06"
     },
     {
-      "uuid": "36c72dd2764bd6ac131f57aba31c793c",
+      "uuid": "d8e2d3f3b560bf3f7e731baac86a6a6b",
       "puuid": "6b49bc140075a9f35ed71eeaba430e03",
       "title": "echo_pcb",
       "filename": "echo_pcb.json",
@@ -112,16 +99,16 @@
       "thumb": "/images/thumb-default.png",
       "components": {
         "afbf6c50ffbf44a394edcec75f58e292": 1,
-        "829500e84a1d4e6b9725b8da656dd56e": 1,
-        "3eb1249f3ebb4284ae221b0379016582": 4,
-        "191dda3cf8b54de297241dbd768c4a59": 2
+        "3eb1249f3ebb4284ae221b0379016582": 2,
+        "191dda3cf8b54de297241dbd768c4a59": 2,
+        "829500e84a1d4e6b9725b8da656dd56e": 1
       },
       "BOM": [],
-      "updateTime": 1646687988,
-      "createTime": 1646550103,
+      "updateTime": 1648443305,
+      "createTime": 1648441909,
       "histories": [],
-      "created_at": "2022-03-06 00:01:43",
-      "updated_at": "2022-03-07 14:19:48"
+      "created_at": "2022-03-27 22:31:49",
+      "updated_at": "2022-03-27 22:55:05"
     }
   ],
   "sort": [
@@ -130,5 +117,5 @@
   "title": "echo",
   "foldername": "echo",
   "schfilename": "echo.json",
-  "schfilemtime": 1646687860652
+  "schfilemtime": 1648440966436
 }
