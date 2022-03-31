@@ -15,9 +15,14 @@ public:
     void setup();
     void update();
     uint32_t getPpg() const;
+
+    uint16_t check();
+
 private:
     MAX86150 max86150Sensor;
-    volatile uint32_t ppg = 0;
+    volatile uint32_t ppg = 310000;
+    bool connected = false;
+
 };
 
 

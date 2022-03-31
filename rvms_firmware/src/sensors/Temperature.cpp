@@ -17,13 +17,24 @@ void Temperature::setup(uint8_t address) {
         debugC("Failed to connect to temperature sensor:");
         debugC(address);
         debugC("Check connection");
+    } else {
+        connected = true;
+        sensor.setResolution(TEMP_RESOLUTION);
     }
-    sensor.setResolution(TEMP_RESOLUTION);
 }
 
 void Temperature::update() {
     sensor.wake();
-    temperatureC = (int16_t) (sensor.readTempC() * 1000);
+    if (connected) {
+        temperatureC = (int16_t) (sensor.readTempC() * 100);
+    } else {
+        temperatureC += random(0,11)-5;
+        if (temperatureC > 33 * 100) {
+            temperatureC -= random(5, 15);
+        } else if (temperatureC < 27 * 100) {
+            temperatureC += random(5, 15);
+        }
+    }
     sensor.shutdown();
 }
 

@@ -17,9 +17,8 @@ public:
     int16_t getTemp() const;
 private:
     Adafruit_MCP9808 sensor = Adafruit_MCP9808();
-    volatile int16_t temperatureC = 0;
-
-
+    volatile int16_t temperatureC = 30 * 100;
+    bool connected = false;
 };
 
 extern Temperature AirTemp;

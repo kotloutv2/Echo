@@ -45,6 +45,7 @@ TaskHandle_t ppgTaskHandle;
     Serial.println("Temperature Monitoring Started");
     AirTemp.setup(I2C_ADDR_AIR_TEMP);
     BodyTemp.setup(I2C_ADDR_BODY_TEMP);
+    vTaskPrioritySet(tempTaskHandle,tskIDLE_PRIORITY + 1);
     while (true) {
         AirTemp.update();
         BodyTemp.update();
@@ -56,9 +57,14 @@ TaskHandle_t ppgTaskHandle;
 [[noreturn]] void taskPpg(void *pvParameters) {
     Serial.println("PPG Monitoring Started");
     Ppg.setup();
+    vTaskPrioritySet(ppgTaskHandle,tskIDLE_PRIORITY + 1);
     while (true) {
-        Ppg.update();
-        vTaskDelay(5);
+        if (Ppg.check() > 0) {
+            Ppg.update();
+            vTaskDelay(5);
+        } else {
+            vTaskDelay(10);
+        }
     }
 }
 
@@ -67,9 +73,10 @@ int main() {
     init();
     Serial.begin(115200);
     // Note: Don't call any interrupt related statements outside the tasks.
-    xTaskCreate(taskBtle, "Task Btle", 256, nullptr, tskIDLE_PRIORITY + 1, &btleTaskHandle);
-    xTaskCreate(taskTemp, "Task Temp", 256, nullptr, tskIDLE_PRIORITY + 1, &tempTaskHandle);
-    xTaskCreate(taskPpg, "Task Ppg", 256, nullptr, tskIDLE_PRIORITY + 1, &ppgTaskHandle);
+    xTaskCreate(taskBtle, "Task Btle", 512, nullptr, tskIDLE_PRIORITY + 3, &btleTaskHandle);
+    xTaskCreate(taskPpg, "Task Ppg", 512, nullptr, tskIDLE_PRIORITY + 5, &ppgTaskHandle);
+    xTaskCreate(taskTemp, "Task Temp", 256, nullptr, tskIDLE_PRIORITY + 5, &tempTaskHandle);
+
 
     vTaskStartScheduler(); // Start the RTOS
     return 0;
